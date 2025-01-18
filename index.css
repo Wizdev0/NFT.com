@@ -22,24 +22,79 @@ body{
     background: hsl(216, 50%, 16%);
     width: 360px;
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     overflow: hidden;
     text-align: center;
-    margin-top: 7.5%;
+    margin-top: 5%;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-header{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+ 
 }
 
 .equil{
     border-radius: 10px;
     margin: 15px;
+   
 }
+
 
 .card-header img{
     width: 90%;
+    height: 100%;
     height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+ 
 }
 
+.card-header .overlay{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 90%;
+    height: 80%;
+    background: rgba(0, 200, 150, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.card-header .overlay img{
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+.card-header:hover .overlay{
+    opacity: 1;
+}
+
+
+.card-header:hover img{
+    opacity: 0.3;
+}
+
+
 .card-text{
-    margin-top: 10px;
+    margin-top: -15px;
     font-family: 'Outfit';
 }
 
@@ -51,11 +106,190 @@ body{
     font-size: 1.7rem;
 }
 
+.card-text-h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
 .card-text-p{
     width: 80%;
     margin-bottom: 20px;
     font-weight: 400;
-    color: grey;
+    color: hsl(215, 51%, 70%);
     text-align: left;
     margin-left: 20px;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.price{
+    display: flex;
+    font-family: 'outfit';
+    margin-left: 20px;
+
+}
+
+.tag{
+    margin-left: 10px;
+    color: hsl(178, 100%, 50%);
+}
+
+.eth-icon{
+    width: 15px;
+    height: 23px;
+}
+
+.time{
+    display: flex;
+    margin-right: 20px;
+    font-family: 'outfit';
+}
+
+.tme{
+    width: 100%;
+    margin-left: 10px;
+    font-weight: 500;
+    color: hsl(215, 51%, 70%);
+}
+
+.clk-icon{
+    width: 15px;
+    height: 20px;
+}
+
+hr{
+    border: none;
+    height: 0.5px;
+    background-color:  hsl(215, 32%, 27%);
+    margin-bottom: 20px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.profile{
+    margin-right: 10px;
+}
+
+.prof{
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.profile-description{
+    font-family: 'outfit';
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.word-1{
+    color: hsl(215, 51%, 70%);
+}
+.word-2{
+    color: white;
+}
+.word-2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:600px){
+ 
+ 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.card{
+    background: hsl(216, 50%, 16%);
+    width: 360px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 10%;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-header{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+ 
+}
+
+.equil{
+    border-radius: 10px;
+    margin: 15px;
+   
+}
+
+
+.card-header img{
+    width: 90%;
+    height: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+ 
+}
+
+.card-header .overlay{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 90%;
+    height: 80%;
+    background: rgba(0, 200, 150, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.card-header .overlay img{
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+.card-header:hover .overlay{
+    opacity: 1;
+}
+
+
+.card-header:hover img{
+    opacity: 0.3;
+}
+
 }

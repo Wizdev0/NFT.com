@@ -94,7 +94,6 @@ In the future am still going to learn more about transitions, Positioning, anima
 
 ## Author
 
-- Website - [Otuwe Wisdom](https://wizdev0.github.io/NFT.com/)
 - Frontend Mentor - [@Wizdev0](https://www.frontendmentor.io/profile/Wizdev0)
 - Twitter - [@otutech](https://www.twitter.com/otutech)
 
